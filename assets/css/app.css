@@ -1,3 +1,11 @@
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+  cursor: inherit; }
+
+a:visited {
+  color: unset; }
+
 .text-xl {
   font-size: 70px; }
 
@@ -34,35 +42,19 @@
   border-right: 1px solid #000000;
   border-bottom: 1px solid #000000; }
 
-.page-intro {
+.horizontal-borders {
+  border-bottom: 1px solid black; }
+
+.texts-2-3-4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
-  .page-intro .main-text {
-    grid-column: 1 / 4;
-    border-bottom: 1px solid #000000; }
-  .page-intro .text3 {
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
-    border-bottom: 1px solid #000000; }
-  .page-intro .text2, .page-intro .text4 {
-    border-bottom: 1px solid #000000; }
-  @media (max-width: 768px) {
-    .page-intro {
-      grid-template-columns: 1fr 1fr; }
-      .page-intro .main-text {
-        grid-column: 1 / 3; }
-      .page-intro .text2 {
-        border-right: 1px solid black; }
-      .page-intro .text3 {
-        border-left: revert;
-        border-right: revert; }
-      .page-intro .text4 {
-        border-right: 1px solid black; } }
-  @media (max-width: 480px) {
-    .page-intro {
-      grid-template-columns: 1fr; }
-      .page-intro .main-text {
-        grid-column: 1; } }
+  .texts-2-3-4 .text-2 {
+    border-right: 1px solid black; }
+  .texts-2-3-4 .text-3 {
+    border-right: 1px solid black; }
+
+.page-intro .main-text {
+  padding-top: 75px; }
 
 .page-para-que {
   display: grid;
@@ -99,3 +91,21 @@
   @media (max-width: 480px) {
     .page-contacto {
       grid-template-columns: 1fr; } }
+
+header {
+  position: fixed;
+  border-bottom: 1px solid black;
+  height: 75px; }
+
+.background-gradient {
+  background: linear-gradient(#C8EEDC 0%, #FFFFFF 10%, #FFFFFF 90%, #C8EEDC 100%); }
+
+.background-fixed-footer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(8, 202, 120, 0.3) 0%, rgba(196, 196, 196, 0) 100%);
+  transform: rotate(-180deg);
+  z-index: -1; }

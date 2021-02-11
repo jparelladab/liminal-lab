@@ -4,3 +4,20 @@
 @import './_sobre-mi.scss';
 @import './_servicios.scss';
 @import './_contacto.scss';
+@import './_header.scss';
+
+
+.background-fixed-footer {
+  position: fixed;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(8, 202, 120, 0.3) 0%, rgba(196, 196, 196, 0) 100%);
+  transform: rotate(-180deg);
+  z-index: -1;
+}
+
+main {
+  // margin-top: 75px;
+}

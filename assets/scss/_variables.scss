@@ -17,6 +17,16 @@ $text-xs: 16px;
 $screen-m: 768px;
 $screen-s: 480px;
 
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+  cursor: inherit;
+}
+a:visited {
+  color: unset;
+}
+
+
 
 .text-xl {
 	font-size: $text-xl;
