@@ -1,0 +1,9 @@
+.page-para-que {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	@media(max-width: $screen-m){
+		grid-template-columns: 1fr;
+	}
+
+}

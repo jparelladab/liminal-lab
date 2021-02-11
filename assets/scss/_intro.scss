@@ -1,0 +1,40 @@
+.page-intro {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	.main-text {
+		grid-column: 1 / 4;
+		border-bottom: 1px solid #000000;
+	}
+	.text3 {
+		border-left: 1px solid #000000;
+		border-right: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+	}
+	.text2, .text4 {
+		border-bottom: 1px solid #000000;
+	}
+
+	@media(max-width: $screen-m){
+		grid-template-columns: 1fr 1fr;
+		.main-text {
+			grid-column: 1 / 3;
+		}
+		.text2 {
+			border-right: 1px solid black;
+		}
+		.text3 {
+			border-left: revert;
+			border-right:revert;
+		}
+		.text4 {
+			border-right: 1px solid black;
+		}
+	}
+	@media(max-width: $screen-s){
+		grid-template-columns: 1fr;
+		.main-text {
+			grid-column: 1;
+		}
+	}
+}

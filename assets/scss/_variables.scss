@@ -1,0 +1,59 @@
+// @font-face {
+//   font-family: PolySansRegular;
+//   src: url('../fonts/PolySans-Neutral.woff');
+// }
+// @font-face {
+//   font-family: PolySansBulky;
+//   src: url('../fonts/PolySans-Bulky.woff');
+// }
+
+
+$text-xl: 70px;
+$text-l: 61px;
+$text-m: 25px;
+$text-s: 19px;
+$text-xs: 16px;
+
+$screen-m: 768px;
+$screen-s: 480px;
+
+
+.text-xl {
+	font-size: $text-xl;
+}
+.text-l {
+	font-size: $text-l;
+}
+.text-m {
+	font-size: $text-m;
+}
+.text-s {
+	font-size: $text-s;
+}
+.text-xs {
+	font-size: $text-xs;
+}
+
+.border-top {
+	border-top: 1px solid #000000;
+}
+.border-bottom {
+	border-bottom: 1px solid #000000;
+}
+.border-left {
+	border-left: 1px solid #000000;
+}
+.border-right {
+	border-right: 1px solid #000000;
+}
+
+.borders-x {
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.borders-trb {
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}

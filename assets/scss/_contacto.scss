@@ -1,0 +1,15 @@
+.page-contacto {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	.main-text {
+		grid-column: 1 / 4;
+	}
+
+	@media(max-width: $screen-m){
+		grid-template-columns: 1fr 1fr;
+	}
+	@media(max-width: $screen-s){
+		grid-template-columns: 1fr;
+	}
+}
