@@ -21,27 +21,62 @@ a {
   color: inherit !important;
   text-decoration: none !important;
   cursor: inherit;
+  cursor: pointer;
 }
 a:visited {
   color: unset;
+}
+
+ul {
+  margin-bottom: 0;
 }
 
 
 
 .text-xl {
 	font-size: $text-xl;
+  @media (max-width: $screen-m){
+    font-size: $text-l;
+  }
+  @media (max-width: $screen-s){
+    font-size: 40px;
+  }
 }
 .text-l {
 	font-size: $text-l;
+  @media (max-width: $screen-m){
+    font-size: 50px;
+  }
+  @media (max-width: $screen-s){
+    font-size: 26px;
+  }
 }
 .text-m {
 	font-size: $text-m;
+  @media (max-width: $screen-m){
+    font-size: 23px;
+  }
+  @media (max-width: $screen-s){
+    font-size: 19px;
+  }
 }
 .text-s {
 	font-size: $text-s;
+  @media (max-width: $screen-m){
+    font-size: 17px;
+  }
+  @media (max-width: $screen-s){
+    font-size: 15px;
+  }
 }
 .text-xs {
 	font-size: $text-xs;
+  @media (max-width: $screen-m){
+    font-size: 14px;
+  }
+  @media (max-width: $screen-s){
+
+  }
 }
 
 .border-t {

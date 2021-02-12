@@ -5,7 +5,7 @@
 <div class="page-intro">
 
   <div class="main-text border-b">
-  	<div class="text-l pb-5 container-xl">
+  	<div class="text-l pb-5 p-3 container-xl">
   		<?php the_field('text1'); ?>
   	</div>
   </div>

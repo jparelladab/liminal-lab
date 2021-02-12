@@ -1,5 +1,8 @@
 
-      <footer >
+      <footer class="d-flex align-items-center p-3 text-m" style="height:75px;">
+
+        <div>© 2021 Liminal Lab.</div>
+        <div class="mx-3"><a href="<?php the_permalink(65); ?>">Textos legales</a></div>
 
 
 			</footer>

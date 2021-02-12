@@ -2,9 +2,22 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 
-	.main-text {
-		grid-column: 1 / 4;
+	.info {
+    border-right: 1px solid black;
+    @media(max-width: $screen-m){
+      // border-bottom: 1px solid black;
+    }
+    @media(max-width: $screen-s){
+      border-right: revert;
+      border-bottom: 1px solid black;
+    }
 	}
+  .social {
+    border-right: 1px solid black;
+    @media(max-width: $screen-s){
+      border-right: revert;
+    }
+  }
 
 	@media(max-width: $screen-m){
 		grid-template-columns: 1fr 1fr;
