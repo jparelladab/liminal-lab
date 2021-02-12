@@ -1,11 +1,41 @@
 .page-servicios {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-
 	@media(max-width: $screen-m){
 		grid-template-columns: 1fr 1fr;
 	}
 	@media(max-width: $screen-s){
 		grid-template-columns: 1fr;
 	}
+  .text1 {
+    grid-column: 1 / 3;
+    border-right: 1px solid black;
+    @media(max-width: $screen-m){
+      grid-column: 1 / 2;
+    }
+    @media(max-width: $screen-s){
+      grid-column: 1;
+      border-right: revert;
+      border-bottom: 1px solid black;
+    }
+  }
+  .text_circle {
+    grid-column: 3;
+    @media(max-width: $screen-m){
+      grid-column: 2;
+    }
+    @media(max-width: $screen-s){
+      grid-column: 1;
+    }
+  }
+  .slider {
+    grid-column: 1 / 4;
+    @media(max-width: $screen-m){
+      grid-column: 1 / 3;
+    }
+    @media(max-width: $screen-s){
+      grid-column: 1;
+    }
+  }
+
 }

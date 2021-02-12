@@ -2,6 +2,23 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
+  .text1 {
+    grid-column: 2;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media(max-width: $screen-m){
+      grid-column: 1;
+      border-left: revert;
+    }
+
+    .more {
+      margin: 0 auto;
+    }
+
+  }
+
 	@media(max-width: $screen-m){
 		grid-template-columns: 1fr;
 	}

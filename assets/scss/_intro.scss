@@ -1,24 +1,37 @@
-.horizontal-borders {
-  border-bottom: 1px solid black;
-  // border-top: 1px solid black;
-}
-.texts-2-3-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 
-  .text-2 {
-    border-right: 1px solid black;
-  }
-  .text-3 {
-    border-right: 1px solid black;
-  }
-  .text-4 {
-
-  }
-}
 .page-intro {
   .main-text {
     padding-top: 75px;
+  }
+
+  .texts-2-3-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media(max-width: $screen-m){
+      grid-template-columns: 1fr 1fr;
+      // border-right: 1px solid black;
+    }
+
+    .text-2 {
+      border-right: 1px solid black;
+      @media(max-width: $screen-m){
+        border-bottom: 1px solid black;
+      }
+    }
+    .text-3 {
+      border-right: 1px solid black;
+      @media(max-width: $screen-m){
+        border-right: revert;
+        border-bottom: 1px solid black;
+      }
+    }
+    .text-4 {
+      @media(max-width: $screen-m){
+        border-right: 1px solid black;
+      }
+
+    }
   }
 	// display: grid;
 	// grid-template-columns: 1fr 1fr 1fr;
