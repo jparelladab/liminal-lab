@@ -36,6 +36,8 @@
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
 
+		<!-- <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.5.0/jquery.marquee.min.js" type="text/javascript" defer></script> -->
+
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">

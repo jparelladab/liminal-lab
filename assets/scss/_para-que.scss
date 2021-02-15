@@ -5,9 +5,12 @@
 	@media(max-width: $screen-m){
 		grid-template-columns: 1fr;
 	}
-  .marquee, .marquee2 {
+  .marquee1, .marquee2 {
     grid-column: 1 / 4;
+    z-index: -1;
+    overflow:hidden;
   }
+
   .marquee2 {
 
   }
