@@ -2,11 +2,11 @@
 /*Template Name: Intro*/
 ?>
 
-<div class="page-intro">
+<div id="intro" class="page-intro">
 
   <div class="main-text border-b">
   	<div class="text-l pb-5 p-3 container-xl">
-  		<?php the_field('text1'); ?>
+  		<div class="dot mr-2"></div><?php the_field('text1'); ?>
   	</div>
   </div>
 	<div class="texts-2-3-4 border-b">

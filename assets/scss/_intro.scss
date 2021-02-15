@@ -2,6 +2,17 @@
 .page-intro {
   .main-text {
     padding-top: 75px;
+
+    .dot {
+      background-color: black;
+      width:40px;
+      height:40px;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+      // margin-bottom: 10px;
+    }
   }
 
   .texts-2-3-4 {

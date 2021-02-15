@@ -20,7 +20,7 @@
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon-16x16.png">
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
@@ -43,12 +43,12 @@
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
 		<div id="container" style="position:relative;">
-      <div class="background-gradient" style="position:absolute;top:0;bottom:0;right:0;left:0;">
+      <div class="background-gradient">
 
 			<header class="container-fluid d-flex justify-content-between">
 
 
-        <div class="logo">LIMINAL LAB</div>
+        <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-liminal.png ?>" alt=""></div>
 
 
 
@@ -71,26 +71,23 @@
 
           <div class="icon-menu"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-menu.png" alt=""></div>
 
-          <nav id="nav-mobile" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-            <?php wp_nav_menu(array(
-               'container' => false,                           // remove nav container
-               'container_class' => '',                 // class of container (should you choose to use it)
-               'menu' => 'Main Menu',                          // nav name
-               'menu_class' => 'd-flex text-xs',               // adding custom nav class
-               'theme_location' => 'main-nav',                 // where it's located in the theme
-               'before' => '',                                 // before the menu
-               'after' => '',                                  // after the menu
-               'link_before' => '',                            // before each link
-               'link_after' => '',                             // after each link
-               'depth' => 0,                                   // limit the depth of the nav
-               'fallback_cb' => ''                             // fallback function (if there is one)
-            )); ?>
-
-          </nav>
-
-
-
 			</header>
+      <nav id="nav-mobile" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <?php wp_nav_menu(array(
+           'container' => false,                           // remove nav container
+           'container_class' => '',                 // class of container (should you choose to use it)
+           'menu' => 'Main Menu',                          // nav name
+           'menu_class' => 'd-flex text-xs',               // adding custom nav class
+           'theme_location' => 'main-nav',                 // where it's located in the theme
+           'before' => '',                                 // before the menu
+           'after' => '',                                  // after the menu
+           'link_before' => '',                            // before each link
+           'link_after' => '',                             // after each link
+           'depth' => 0,                                   // limit the depth of the nav
+           'fallback_cb' => ''                             // fallback function (if there is one)
+        )); ?>
+
+      </nav>
 
 
 

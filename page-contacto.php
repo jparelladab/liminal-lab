@@ -1,7 +1,7 @@
 <?php
 /*Template Name: Contacto*/
 ?>
-<div class="page-contacto border-b">
+<div id="contacto" class="page-contacto border-b">
   <div class="info text-m p-3 container">
     <?php the_field('text1', 13); ?>
   </div>
