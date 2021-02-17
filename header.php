@@ -45,7 +45,9 @@
 		<div id="container" style="position:relative;">
       <div class="background-gradient">
 
-			<header class="container-fluid d-flex justify-content-between">
+			<header class="container-fluid ">
+				<div class="x-padding w-100 d-flex justify-content-between">
+					
 
 
         <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-liminal.png ?>" alt=""></div>
@@ -71,6 +73,7 @@
 
           <div class="icon-menu"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-menu.png" alt=""></div>
 
+				</div>
 			</header>
       <nav id="nav-mobile" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <?php wp_nav_menu(array(
@@ -88,6 +91,7 @@
         )); ?>
 
       </nav>
+      <div class="menu-line"></div>
 
 
 

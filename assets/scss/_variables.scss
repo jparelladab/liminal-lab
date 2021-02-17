@@ -102,3 +102,13 @@ ul {
 	border-right: 1px solid #000000;
 	border-bottom: 1px solid #000000;
 }
+
+.x-padding {
+  padding: 0 50px;
+  @media (max-width: $screen-m){
+    padding: 0 25px;
+  }
+  @media (max-width: $screen-s){
+    padding: 0 15px;;
+  }
+}
