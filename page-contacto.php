@@ -2,10 +2,10 @@
 /*Template Name: Contacto*/
 ?>
 <div id="contacto" class="page-contacto border-b">
-  <div class="info text-m p-3 container">
+  <div class="info text-m py-4 x-padding">
     <?php the_field('text1', 13); ?>
   </div>
-  <div class="social container text-m p-3">
+  <div class="social py-4 x-padding text-m">
     <div><a href="<?php the_field('instagram', 13); ?>">Instagram</a></div>
     <div><a href="<?php the_field('facebook', 13); ?>">Facebook</a></div>
     <div><a href="<?php the_field('linkedin', 13); ?>">LinkedIn</a></div>
