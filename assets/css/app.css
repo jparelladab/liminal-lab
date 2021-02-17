@@ -1,14 +1,22 @@
+@font-face {
+  font-family: Everett;
+  src: url("../fonts/Everett-Regular.otf"); }
+
 a {
   color: inherit !important;
   text-decoration: none !important;
   cursor: inherit;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: inherit; }
 
 a:visited {
   color: unset; }
 
 ul {
   margin-bottom: 0; }
+
+body {
+  font-family: Everett; }
 
 .text-xl {
   font-size: 70px; }
@@ -333,7 +341,6 @@ header {
   position: fixed;
   border-bottom: 1px solid black;
   height: 75px;
-  background: linear-gradient(#C8EEDC 0%, #DDF2E7 100%);
   display: flex;
   align-items: center;
   z-index: 999; }

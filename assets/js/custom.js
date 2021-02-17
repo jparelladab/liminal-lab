@@ -40,5 +40,21 @@ var $mq1 = $('.marquee2').marquee({
     $('#nav-mobile').slideToggle();
   })
 
+  $(document).on('scroll', function(){
+    $('header').css('background-color', 'white');
+  });
+
 
 });
+
+
+// var targetOffset = $("#anchor-point").offset().top;
+
+// var $w = $(window).scroll(function(){
+//     if ( $w.scrollTop() > targetOffset ) {   
+//         $('#voice2').css({"border-bottom":"2px solid #f4f5f8"});
+//         $('#voice3').css({"border-bottom":"2px solid #2e375b"});
+//     } else {
+//       // ...
+//     }
+// });

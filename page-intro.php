@@ -5,7 +5,7 @@
 <div id="intro" class="page-intro">
 
   <div class="main-text border-b">
-  	<div class="text-l pt-3 pb-5 x-padding">
+  	<div class="text-l py-5 x-padding">
   		<div class="dot mr-2"></div><?php the_field('text1'); ?>
   	</div>
   </div>

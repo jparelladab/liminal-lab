@@ -1,7 +1,7 @@
-// @font-face {
-//   font-family: PolySansRegular;
-//   src: url('../fonts/PolySans-Neutral.woff');
-// }
+@font-face {
+  font-family: Everett;
+  src: url('../fonts/Everett-Regular.otf');
+}
 // @font-face {
 //   font-family: PolySansBulky;
 //   src: url('../fonts/PolySans-Bulky.woff');
@@ -22,6 +22,7 @@ a {
   text-decoration: none !important;
   cursor: inherit;
   cursor: pointer;
+  font-family: inherit;
 }
 a:visited {
   color: unset;
@@ -31,7 +32,9 @@ ul {
   margin-bottom: 0;
 }
 
-
+body {
+  font-family: Everett;
+}
 
 .text-xl {
 	font-size: $text-xl;
