@@ -3,7 +3,7 @@
 ?>
 <div id="contacto" class="page-contacto border-b">
   <div class="info text-m py-4 x-padding">
-    <?php the_field('text1', 13); ?>
+    <div><span class="section-dot dot-contacto"></span><?php the_field('text1', 13); ?></div>
   </div>
   <div class="social py-4 x-padding text-m">
     <div><a href="<?php the_field('instagram', 13); ?>">Instagram</a></div>

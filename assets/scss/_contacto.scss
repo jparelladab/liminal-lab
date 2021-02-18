@@ -11,6 +11,9 @@
       border-right: revert;
       border-bottom: 1px solid black;
     }
+    p:nth-of-type(1){
+      display: inline;
+    }
 	}
   .social {
     border-right: 1px solid black;

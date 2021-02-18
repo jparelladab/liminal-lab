@@ -136,7 +136,13 @@ function bones_scripts_and_styles() {
 		//register custom js
 		wp_register_script( 'custom-js', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'), '', true );
 
-		//register bootstrap css
+		//register AOS js
+    wp_register_script( 'aos-js', get_stylesheet_directory_uri() . '/assets/js/aos.js', array('jquery'), '', true );
+
+    //register AOS css
+    wp_register_style( 'aos-css', get_stylesheet_directory_uri() . '/assets/css/aos.css', array(), '', 'all' );
+
+    //register bootstrap css
 		wp_register_style( 'bootstrap-css', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css', array(), '', 'all' );
 
 		//register bootstrap js
@@ -165,13 +171,15 @@ function bones_scripts_and_styles() {
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
 		wp_enqueue_style( 'slick-css' );
-
+    wp_enqueue_style( 'aos-css' );
 		wp_enqueue_style( 'bootstrap-css' );
 		wp_enqueue_style( 'custom-stylesheet' );
-		wp_enqueue_script( 'bootstrap-js' );
-		wp_enqueue_script( 'custom-js' );
+
+    wp_enqueue_script( 'bootstrap-js' );
 		wp_enqueue_script( 'marquee' );
 		wp_enqueue_script( 'slick-js' );
+    wp_enqueue_script( 'aos-js' );
+		wp_enqueue_script( 'custom-js' );
 
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 

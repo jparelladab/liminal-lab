@@ -45,53 +45,48 @@
 		<div id="container" style="position:relative;">
       <div class="background-gradient">
 
-			<header class="container-fluid ">
-				<div class="x-padding w-100 d-flex justify-content-between">
-					
-
-
-        <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-liminal.png ?>" alt=""></div>
-
-
-
-					<nav id="nav-desktop" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<?php wp_nav_menu(array(
-  		         'container' => false,                           // remove nav container
-  		         'container_class' => '',                 // class of container (should you choose to use it)
-  		         'menu' => 'Main Menu',                          // nav name
-  		         'menu_class' => 'd-flex text-xs',               // adding custom nav class
-  		         'theme_location' => 'main-nav',                 // where it's located in the theme
-  		         'before' => '',                                 // before the menu
-               'after' => '',                                  // after the menu
-               'link_before' => '',                            // before each link
-               'link_after' => '',                             // after each link
-               'depth' => 0,                                   // limit the depth of the nav
-  		         'fallback_cb' => ''                             // fallback function (if there is one)
-						)); ?>
-
-					</nav>
-
-          <div class="icon-menu"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-menu.png" alt=""></div>
-
+			<header class="header-desktop">
+				<div class="w-100 x-padding d-flex justify-content-between">
+        			<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-liminal.svg ?>" alt=""></div>
+						<nav id="nav-desktop" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+							<?php wp_nav_menu(array(
+								'container' => false,                           // remove nav container
+								'container_class' => '',                 		// class of container (should you choose to use it)
+								'menu' => 'Main Menu',                          // nav name
+								'menu_class' => 'd-flex text-xs',               // adding custom nav class
+								'theme_location' => 'main-nav',                 // where it's located in the theme
+								'before' => '<span class="section-dot"></span>',// before the menu
+								'after' => '',                                  // after the menu
+								'link_before' => '',                            // before each link
+								'link_after' => '',                             // after each link
+								'depth' => 0,                                   // limit the depth of the nav
+								'fallback_cb' => ''                             // fallback function (if there is one)
+							)); ?>
+						</nav>
 				</div>
 			</header>
-      <nav id="nav-mobile" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-        <?php wp_nav_menu(array(
-           'container' => false,                           // remove nav container
-           'container_class' => '',                 // class of container (should you choose to use it)
-           'menu' => 'Main Menu',                          // nav name
-           'menu_class' => 'd-flex text-xs',               // adding custom nav class
-           'theme_location' => 'main-nav',                 // where it's located in the theme
-           'before' => '',                                 // before the menu
-           'after' => '',                                  // after the menu
-           'link_before' => '',                            // before each link
-           'link_after' => '',                             // after each link
-           'depth' => 0,                                   // limit the depth of the nav
-           'fallback_cb' => ''                             // fallback function (if there is one)
-        )); ?>
-
-      </nav>
-      <div class="menu-line"></div>
+			<header class="header-mobile">
+				<div class="x-padding d-flex justify-content-between" style="width:100%;">					
+					<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-liminal.svg ?>" alt=""></div>
+					<div class="icon-menu"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-menu.png" alt=""></div>
+					<nav id="nav-mobile" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+						<?php wp_nav_menu(array(
+						'container' => false,                           // remove nav container
+						'container_class' => '',                 // class of container (should you choose to use it)
+						'menu' => 'Main Menu',                          // nav name
+						'menu_class' => 'd-flex text-xs',               // adding custom nav class
+						'theme_location' => 'main-nav',                 // where it's located in the theme
+						'before' => '<span class="section-dot"></span>',                                 // before the menu
+						'after' => '',                                  // after the menu
+						'link_before' => '',                            // before each link
+						'link_after' => '',                             // after each link
+						'depth' => 0,                                   // limit the depth of the nav
+						'fallback_cb' => ''                             // fallback function (if there is one)
+						)); ?>
+					</nav>
+				</div>
+			</header>
+<!--       <div class="menu-line"></div> -->
 
 
 

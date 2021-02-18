@@ -3,6 +3,12 @@
   .main-text {
     padding-top: 75px;
     line-height: 73.2px;
+    @media(max-width: $screen-m){
+      line-height: 60px;
+    }
+    @media(max-width: $screen-s){
+      line-height: 31.2px;
+    }
 
     .dot {
       background-color: black;
