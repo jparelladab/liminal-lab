@@ -285,7 +285,7 @@ body {
       .page-servicios .text_circle {
         grid-column: 1; } }
     .page-servicios .text_circle img {
-      width: 100%;
+      width: 70%;
       max-width: 350px;
       -webkit-animation-name: spin;
       -webkit-animation-duration: 8000ms;
@@ -472,7 +472,7 @@ header {
 
 #nav-mobile {
   display: none;
-  width: 100%;
+  width: 100vw;
   background: linear-gradient(#C8EEDC 0%, #DDF2E7 100%);
   height: max-content;
   position: absolute;
