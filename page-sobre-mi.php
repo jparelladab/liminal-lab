@@ -1,7 +1,7 @@
 <?php
 /*Template Name: Sobre-mi*/
 ?>
-<div class="page-sobre-mi pos-rel" >
+<div class="page-sobre-mi pb-5 pos-rel" >
     <div id="sobre-mi"></div>
 	<div class="text1 py-4 x-padding">
 	<div class="text-m">

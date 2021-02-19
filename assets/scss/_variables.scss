@@ -34,6 +34,18 @@ a:visited {
   hyphens: none !important;
 }
 
+.custom-underline {
+  width:fit-content;
+  display:block;
+}
+.custom-underline::after {
+  content: "";
+  height:1px;
+  background-color:black;
+  margin-top:3px;
+  display: block;
+}
+
 ul {
   margin-bottom: 0;
 }
@@ -142,7 +154,7 @@ body {
 .x-padding {
   padding: 0 50px;
   @media (max-width: $screen-m){
-    padding: 0 25px;
+    padding: 0 24px;
   }
   @media (max-width: $screen-s){
     padding: 0 15px;

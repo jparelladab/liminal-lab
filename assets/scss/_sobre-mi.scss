@@ -9,6 +9,9 @@
   #sobre-mi {
     position: absolute;
     top:-100px;
+    @media(max-width: $screen-s){
+      top:-75px;
+    }
   }
 
   .text1 {

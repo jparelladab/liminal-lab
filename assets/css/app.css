@@ -21,6 +21,17 @@ a:visited {
   -ms-hyphens: none;
   hyphens: none !important; }
 
+.custom-underline {
+  width: fit-content;
+  display: block; }
+
+.custom-underline::after {
+  content: "";
+  height: 1px;
+  background-color: black;
+  margin-top: 3px;
+  display: block; }
+
 ul {
   margin-bottom: 0; }
 
@@ -117,7 +128,7 @@ body {
   padding: 0 50px; }
   @media (max-width: 1000px) {
     .x-padding {
-      padding: 0 25px; } }
+      padding: 0 24px; } }
   @media (max-width: 480px) {
     .x-padding {
       padding: 0 15px; } }
@@ -223,8 +234,13 @@ body {
   .page-para-que .circles {
     grid-column: 2 / 4;
     grid-row: 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; }
+    display: flex;
+    justify-content: center;
+    align-items: cener; }
+    @media (max-width: 1000px) {
+      .page-para-que .circles {
+        grid-column: 1;
+        grid-row: revert; } }
     .page-para-que .circles .circle1 {
       grid-column: 1;
       grid-row: 1; }
@@ -240,11 +256,7 @@ body {
     .page-para-que .circles .circle5 {
       grid-column: 3;
       grid-row: 3; }
-    @media (max-width: 1000px) {
-      .page-para-que .circles {
-        grid-column: 1;
-        grid-row: revert; } }
-    .page-para-que .circles img {
+    .page-para-que .circles img, .page-para-que .circles svg {
       width: 100%;
       max-width: 800px; }
 
@@ -258,6 +270,9 @@ body {
   .page-sobre-mi #sobre-mi {
     position: absolute;
     top: -100px; }
+    @media (max-width: 480px) {
+      .page-sobre-mi #sobre-mi {
+        top: -75px; } }
   .page-sobre-mi .text1 {
     grid-column: 2;
     border-left: 1px solid black;
@@ -291,6 +306,9 @@ body {
   .page-servicios #servicios {
     position: absolute;
     top: -100px; }
+    @media (max-width: 480px) {
+      .page-servicios #servicios {
+        top: -75px; } }
   .page-servicios .text1 {
     grid-column: 1 / 3;
     border-right: 1px solid black; }
@@ -331,7 +349,7 @@ body {
       -ms-animation-iteration-count: infinite;
       -ms-animation-timing-function: linear;
       animation-name: spin;
-      animation-duration: 8000ms;
+      animation-duration: 13000ms;
       animation-iteration-count: infinite;
       animation-timing-function: linear; }
 
@@ -512,12 +530,13 @@ header {
   background-color: #C8EEDC;
   top: 75px;
   left: 0;
-  right: 0;
-  padding: 0 15px; }
+  right: 0; }
   #nav-mobile #menu-main-menu-1 {
     display: flex;
     flex-direction: column;
-    padding: 0; }
+    padding: 0 15px;
+    background-color: white;
+    padding-bottom: 20px; }
     #nav-mobile #menu-main-menu-1 li {
       margin: 10px 0; }
 
