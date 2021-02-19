@@ -393,7 +393,8 @@ body {
         .page-servicios .slider .prev-arr {
           grid-column: 1;
           grid-row: 1;
-          border-bottom: 1px solid black; } }
+          border-bottom: 1px solid black;
+          border-left: revert; } }
       .page-servicios .slider .prev-arr img {
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1); }
