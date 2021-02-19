@@ -19,7 +19,7 @@ a:visited {
 * {
   -webkit-hyphens: none;
   -ms-hyphens: none;
-  hyphens: none; }
+  hyphens: none !important; }
 
 ul {
   margin-bottom: 0; }
