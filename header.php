@@ -69,7 +69,7 @@
 				<div class="x-padding d-flex justify-content-between" style="width:100%;">					
 					<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-liminal.svg ?>" alt=""></div>
 					<div class="icon-menu"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-menu.png" alt=""></div>
-					<nav id="nav-mobile" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					<nav id="nav-mobile" class="pb-3 border-b" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
 						'container' => false,                           // remove nav container
 						'container_class' => '',                 // class of container (should you choose to use it)

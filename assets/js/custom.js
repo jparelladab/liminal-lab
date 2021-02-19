@@ -89,6 +89,7 @@ $('.page-intro .border-b-abs').css('width', '100%');
       $('.page-intro .border-b-abs').css('width', '100%');
       $('.page-para-que .border-b-abs').css('width', '0');
       $('.page-servicios .border-t-abs').css('width', '0');
+      $('.page-servicios .border-b-abs').css('width', '0');
       $('.page-sobre-mi .border-b-abs').css('width', '0');
       $('.page-contacto .border-b-abs').css('width', '0');
 
@@ -115,6 +116,7 @@ $('.page-intro .border-b-abs').css('width', '100%');
         $('.page-intro .border-b-abs').css('width', '0');
         $('.page-para-que .border-b-abs').css('width', '100%');
         $('.page-servicios .border-t-abs').css('width', '0');
+        $('.page-servicios .border-b-abs').css('width', '0');
         $('.page-sobre-mi .border-b-abs').css('width', '0');
         $('.page-contacto .border-b-abs').css('width', '0');
 
@@ -131,8 +133,9 @@ $('.page-intro .border-b-abs').css('width', '100%');
         menu_contacto.removeClass('bg-black');
 
        $('.page-intro .border-b-abs').css('width', '0');
-        $('.page-para-que .border-b-abs').css('width', '0');
+        $('.page-para-que .border-b-abs').css('width', '100%');
         $('.page-servicios .border-t-abs').css('width', '100%');
+        $('.page-servicios .border-b-abs').css('width', '100%');
         $('.page-sobre-mi .border-b-abs').css('width', '0');
         $('.page-contacto .border-b-abs').css('width', '0');
 
@@ -152,6 +155,7 @@ $('.page-intro .border-b-abs').css('width', '100%');
         $('.page-intro .border-b-abs').css('width', '0');
         $('.page-para-que .border-b-abs').css('width', '0');
         $('.page-servicios .border-t-abs').css('width', '0');
+        $('.page-servicios .border-b-abs').css('width', '100%');
         $('.page-sobre-mi .border-b-abs').css('width', '100%');
         $('.page-contacto .border-b-abs').css('width', '100%');
       }
@@ -169,6 +173,7 @@ $('.page-intro .border-b-abs').css('width', '100%');
         $('.page-intro .border-b-abs').css('width', '0');
         $('.page-para-que .border-b-abs').css('width', '0');
         $('.page-servicios .border-t-abs').css('width', '0');
+        $('.page-servicios .border-b-abs').css('width', '0');
         $('.page-sobre-mi .border-b-abs').css('width', '100%');
         $('.page-contacto .border-b-abs').css('width', '100%');
       }

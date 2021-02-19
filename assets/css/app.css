@@ -101,14 +101,14 @@ body {
   bottom: 0;
   width: 0;
   border-bottom: 1px solid #000000;
-  transition: width 0.5s; }
+  transition: width 1s; }
 
 .border-t-abs {
   position: absolute;
   top: 0;
   width: 0;
   border-bottom: 1px solid #000000;
-  transition: width 0.5s; }
+  transition: width 1s; }
 
 .pos-rel {
   position: relative; }

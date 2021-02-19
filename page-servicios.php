@@ -1,7 +1,7 @@
 <?php
 /*Template Name: Servicios*/
 ?>
-<div class="page-servicios border-b">
+<div class="page-servicios pos-rel">
   <div id="servicios"></div>
 
     <div class="text1 text-m"><div class="py-4 x-padding"><div data-aos="fade-up" data-aos-duration="1000"><span class="section-dot dot-servicios"></span><?php the_field('text1', 9); ?></div></div></div>
@@ -23,5 +23,7 @@
     <div class="next-arr container"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg ?>" alt=""></div>
     <div class="border-t-abs"></div>
   </div>
+
+  <div class="border-b-abs"></div>
 
 </div>
