@@ -28,6 +28,12 @@ a:visited {
   color: unset;
 }
 
+* {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
 ul {
   margin-bottom: 0;
 }
@@ -112,6 +118,25 @@ body {
 	border-top: 1px solid #000000;
 	border-right: 1px solid #000000;
 	border-bottom: 1px solid #000000;
+}
+
+.border-b-abs {
+  position: absolute;
+  bottom:0;
+  width:0;
+  border-bottom: 1px solid #000000;
+  transition: width 0.5s;
+}
+.border-t-abs {
+  position: absolute;
+  top:0;
+  width:0;
+  border-bottom: 1px solid #000000;
+  transition: width 0.5s;
+}
+
+.pos-rel {
+  position:relative;
 }
 
 .x-padding {
