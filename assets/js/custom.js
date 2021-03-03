@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 
 //initialize AOS
 AOS.init({
-  // once: true,
+  once: true,
   offset: 0,
   duration: 1000
 });
@@ -41,7 +41,8 @@ var $mq1 = $('.marquee2').marquee({
   		autoplaySpeed: 5000,
   		infinite: true,
   		prevArrow: $('.prev-arr'),
-  		nextArrow: $('.next-arr')
+  		nextArrow: $('.next-arr'),
+      adaptiveHeight: true
   });
 
   $('.icon-menu').on('click', function(){
