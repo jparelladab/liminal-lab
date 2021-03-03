@@ -1,11 +1,9 @@
 jQuery(document).ready(function($){
 
-//initialize AOS
-AOS.init({
-  once: true,
-  offset: 0,
-  duration: 1000
-});
+//initialize AOS with setTimeout to solve performance problems
+
+setTimeout(function () { AOS.init({once: true, offset: 0, duration: 1000}); }, 100);
+
 
 //initialize marquees
 var $mq1 = $('.marquee1').marquee({

@@ -19,7 +19,7 @@
       </svg>
       <div class="border-r-abs"></div>
     </div>
-    <div data-aos="fade-up" class="slider-content text-s py-4 x-padding">
+    <div data-aos="fade-up"  class="slider-content text-s py-4 x-padding">
     	<?php if ( have_rows('text_slider', 9) ): ?>
 		    <div class="servicios-slider">
 		    <?php while( have_rows('text_slider', 9) ): the_row(); ?>
