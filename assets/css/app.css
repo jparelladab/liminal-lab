@@ -227,6 +227,11 @@ body {
   @media (max-width: 480px) {
     .page-intro .texts-2-3-4 .text-3 .border-r-abs {
       display: none; } }
+  .page-intro .texts-2-3-4 .text-4 .border-r-abs {
+    display: none; }
+  @media (max-width: 1000px) {
+    .page-intro .texts-2-3-4 .text-4 .border-r-abs {
+      display: block; } }
   @media (max-width: 480px) {
     .page-intro .texts-2-3-4 .text-4 .border-r-abs {
       display: none; } }
