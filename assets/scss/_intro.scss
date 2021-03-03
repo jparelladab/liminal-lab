@@ -45,7 +45,7 @@
     }
 
     .text-2 {
-      border-right: 1px solid black;
+      // border-right: 1px solid black;
       @media(max-width: $screen-m){
         border-bottom: 1px solid black;
       }
@@ -54,7 +54,7 @@
       }
     }
     .text-3 {
-      border-right: 1px solid black;
+      // border-right: 1px solid black;
       @media(max-width: $screen-m){
         border-right: revert;
         border-bottom: 1px solid black;
@@ -62,7 +62,7 @@
     }
     .text-4 {
       @media(max-width: $screen-m){
-        border-right: 1px solid black;
+        // border-right: 1px solid black;
       }
       @media(max-width: $screen-s){
         border-right: revert;

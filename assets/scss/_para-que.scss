@@ -1,10 +1,10 @@
 .page-para-que {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
-	@media(max-width: $screen-m){
-		grid-template-columns: 1fr;
-	}
+  @media(max-width: $screen-m){
+    grid-template-columns: 1fr;
+  }
   .marquee1, .marquee2 {
     grid-column: 1 / 4;
     // z-index: -1;
@@ -17,7 +17,7 @@
   }
   .text1 {
     grid-column: 1 / 3;
-    border-right: 1px solid black;
+    // border-right: 1px solid black;
     // border-bottom: 1px solid black;
     @media(max-width: $screen-m){
       grid-column: 1;
@@ -35,12 +35,34 @@
   }
   .text2 {
     grid-column: 1;
-    border-right: 1px solid black;
+    // border-right: 1px solid black;
     // border-bottom: 1px solid black;
 
     @media(max-width: $screen-m){
      // border-bottom: 1px solid black;
      border-right: revert;
+    }
+    @media(max-width: $screen-s){
+      display: none;
+    }
+  }
+
+  .text2-mobile {
+    display: none;
+    grid-column: 1;
+      p {
+        margin-bottom:0;
+      }
+    .li-text2 {
+      display: none;
+      margin-top:10px;
+      margin-left: 16px;
+    }
+    .close {
+      display: none;
+    }
+    @media(max-width: $screen-s){
+      display: block;
     }
 
   }
@@ -100,6 +122,17 @@
     img,svg {
       width: 100%;
       max-width: 800px;
+      margin: auto;
+      circle, path.arrow{
+        fill: none;
+        stroke: #232323;
+        stroke-width: 1;
+        transition: all 5s ease-in-out;
+        stroke-dashoffset: 1000;
+      }
+      path.arrow {
+        transition: all 12s ease-in-out;
+      }
     }
 
   }

@@ -29,13 +29,23 @@ a:visited {
 }
 
 * {
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
+  -webkit-hyphens: none !important;
+  -ms-hyphens: none !important;
+  hyphens: none;
+  min-height: 0;
+  min-width: 0;
+}
+p {
   hyphens: none !important;
 }
-
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-weight: 400;
+}
 .custom-underline {
-  width:fit-content;
+  width:max-content;
   display:block;
 }
 .custom-underline::after {
@@ -146,6 +156,22 @@ body {
   border-bottom: 1px solid #000000;
   transition: width 1s;
 }
+.border-r-abs {
+  position: absolute;
+  top:0;
+  right:0;
+  height:0;
+  border-right: 1px solid #000000;
+  transition: height 1s;
+}
+.border-l-abs {
+  position: absolute;
+  top:0;
+  left:0;
+  height:0;
+  border-right: 1px solid #000000;
+  transition: height 1s;
+}
 
 .pos-rel {
   position:relative;
@@ -175,4 +201,8 @@ body {
 
 .bg-black {
   background-color:black;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

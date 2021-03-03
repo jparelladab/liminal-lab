@@ -2,13 +2,23 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 
+	@media(max-width: $screen-m){
+		grid-template-columns: 1fr 1fr;
+	}
+	@media(max-width: $screen-s){
+		grid-template-columns: 1fr;
+    .border-r-abs {
+      display: none;
+    }
+	}
+
 	.info {
-    border-right: 1px solid black;
+    // border-right: 1px solid black;
     @media(max-width: $screen-m){
       // border-bottom: 1px solid black;
     }
     @media(max-width: $screen-s){
-      border-right: revert;
+      // border-right: revert;
       border-bottom: 1px solid black;
     }
     p:nth-of-type(1){
@@ -16,16 +26,9 @@
     }
 	}
   .social {
-    border-right: 1px solid black;
+    // border-right: 1px solid black;
     @media(max-width: $screen-s){
-      border-right: revert;
+      // border-right: revert;
     }
   }
-
-	@media(max-width: $screen-m){
-		grid-template-columns: 1fr 1fr;
-	}
-	@media(max-width: $screen-s){
-		grid-template-columns: 1fr;
-	}
 }

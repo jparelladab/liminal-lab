@@ -10,6 +10,8 @@ header {
 
   .logo {
     min-width: fit-content;
+    display: flex;
+    align-items: center;
     img {
       width: 100px;
     }
@@ -17,7 +19,7 @@ header {
   .icon-menu {
     display: none;
     cursor: pointer;
-    @media (max-width: $screen-s){
+    @media (max-width: $screen-m){
       display: block;
     }
   }
@@ -25,16 +27,15 @@ header {
 }
 
 .header-desktop {
-  @media (max-width: $screen-s){
+  @media (max-width: $screen-m){
     display: none;
   }
-
 }
 
 
 
 .background-gradient {
-  background: linear-gradient(#C8EEDC 0%, #FFFFFF 10%, #FFFFFF 90%, #C8EEDC 100%);
+  background: linear-gradient(#C8EEDC 0%, #FFFFFF 20%, #FFFFFF 80%, #C8EEDC 100%);
   top:0;
   bottom:0;
   right:0;
@@ -68,7 +69,7 @@ header {
 
 .header-mobile {
   display: none;
-   @media (max-width: $screen-s){
+   @media (max-width: $screen-m){
     display: flex;
   }
 }

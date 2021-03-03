@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 
 //initialize AOS
 AOS.init({
-  once: true,
+  // once: true,
   offset: 0,
   duration: 1000
 });
@@ -49,7 +49,16 @@ var $mq1 = $('.marquee2').marquee({
   });
   $('#nav-mobile .menu-item').on('click', function(){
     $('#nav-mobile').slideToggle();
-  })
+  });
+
+
+  //Acordeon para-que
+
+  $('.list-item').on('click', function(){
+    $(this).next().slideToggle();
+    $(this).find(".close").toggle();
+    $(this).find(".open").toggle();
+  });
 
   //section dot behavior on scroll
   const menu_height = 75;
@@ -67,18 +76,19 @@ var $mq1 = $('.marquee2').marquee({
   let chosen_menu = menu_intro;
   menu_intro.addClass('bg-black');
 
-  $.fn.isInViewport = function () {
-    let elementTop = $(this).offset().top;
-    let elementBottom = elementTop + $(this).outerHeight();
+//   $.fn.isInViewport = function () {
+//     let elementTop = $(this).offset().top;
+//     let elementBottom = elementTop + $(this).outerHeight();
 
-    let viewportTop = $(window).scrollTop();
-    let viewportBottom = viewportTop + $(window).height();
+//     let viewportTop = $(window).scrollTop();
+//     let viewportBottom = viewportTop + $(window).height();
 
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-};
+//     return elementBottom > viewportTop && elementTop < viewportBottom;
+// };
 
 
 $('.page-intro .border-b-abs').css('width', '100%');
+$('.page-intro .border-r-abs').css('height', '100%');
 
   $(document).on('scroll', function(){
     if ($(document).scrollTop() == 0) {
@@ -92,6 +102,7 @@ $('.page-intro .border-b-abs').css('width', '100%');
       menu_contacto.removeClass('bg-black');
 
       $('.page-intro .border-b-abs').css('width', '100%');
+      $('.page-intro .border-r-abs').css('height', '100%');
       // $('.page-para-que .border-b-abs').css('width', '0');
       // $('.page-servicios .border-t-abs').css('width', '0');
       // $('.page-servicios .border-b-abs').css('width', '0');
@@ -102,6 +113,7 @@ $('.page-intro .border-b-abs').css('width', '100%');
       $('header, #nav-mobile').css('background-color', 'white');
       if ($(document).scrollTop() > intro.offset().top - 300 && $(document).scrollTop() < para_que.offset().top){
         $('.page-intro .border-b-abs').css('width', '100%');
+        $('.page-intro .border-r-abs').css('height', '100%');
         // $('.page-para-que .border-b-abs').css('width', '0');
         // $('.page-servicios .border-t-abs').css('width', '0');
         // $('.page-sobre-mi .border-b-abs').css('width', '0');
@@ -120,6 +132,9 @@ $('.page-intro .border-b-abs').css('width', '100%');
 
         // $('.page-intro .border-b-abs').css('width', '0');
         $('.page-para-que .border-b-abs').css('width', '100%');
+        $('.page-para-que .border-r-abs').css('height', '100%');
+        $('.page-para-que .border-t-abs').css('width', '100%');
+        $('circle, path.arrow').css('stroke-dashoffset', '0');
         // $('.page-servicios .border-t-abs').css('width', '0');
         // $('.page-servicios .border-b-abs').css('width', '0');
         // $('.page-sobre-mi .border-b-abs').css('width', '0');
@@ -140,6 +155,10 @@ $('.page-intro .border-b-abs').css('width', '100%');
        // $('.page-intro .border-b-abs').css('width', '0');
         $('.page-para-que .border-b-abs').css('width', '100%');
         $('.page-servicios .border-t-abs').css('width', '100%');
+        $('.page-servicios .border-r-abs').css('height', '100%');
+        $('.page-servicios .border-l-abs').css('height', '100%');
+        $('.page-servicios .border-b-abs').css('width', '100%');
+        $('.page-servicios path').css('stroke-dashoffset', '0');
         // $('.page-servicios .border-b-abs').css('width', '100%');
         // $('.page-sobre-mi .border-b-abs').css('width', '0');
         // $('.page-contacto .border-b-abs').css('width', '0');
@@ -160,11 +179,12 @@ $('.page-intro .border-b-abs').css('width', '100%');
         // $('.page-intro .border-b-abs').css('width', '0');
         // $('.page-para-que .border-b-abs').css('width', '0');
         // $('.page-servicios .border-t-abs').css('width', '0');
-        $('.page-servicios .border-b-abs').css('width', '100%');
+        // $('.page-servicios .border-b-abs').css('width', '100%');
         $('.page-sobre-mi .border-b-abs').css('width', '100%');
         $('.page-contacto .border-b-abs').css('width', '100%');
+        $('.page-sobre-mi .border-l-abs').css('height', '100%');
       }
-      if ($(document).scrollTop() > contacto.offset().top - 400 || $(window).scrollTop() + $(window).height() >= $(document).height()){
+      if ($(document).scrollTop() > contacto.offset().top - 400 || $(window).scrollTop() + $(window).height() >= $(document).height() || $(window).scrollTop() + $(window).height() == $(document).height()){
         chosen.find('.section-dot').toggleClass('bg-black');
         chosen = contacto;
         chosen.find('.section-dot').toggleClass('bg-black');
@@ -181,6 +201,7 @@ $('.page-intro .border-b-abs').css('width', '100%');
         // $('.page-servicios .border-b-abs').css('width', '0');
         // $('.page-sobre-mi .border-b-abs').css('width', '100%');
         // $('.page-contacto .border-b-abs').css('width', '100%');
+        $('.page-contacto .border-r-abs').css('height', '100%');
       }
     }
     // if ($('.page-intro .border-b-abs').isInViewport()){
