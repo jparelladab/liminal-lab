@@ -22,7 +22,13 @@
     @media(max-width: $screen-m){
       grid-column: 1;
       border-left: revert;
+      .border-l-abs {
+        display: none;
+      }
     }
+    @media(max-width: $screen-s){
+    }
+
     p:nth-of-type(1){
       display: inline;
     }

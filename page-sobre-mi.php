@@ -7,7 +7,7 @@
   	<div data-aos="fade-up" class="text-m" >
   		<div><span class="section-dot dot-para-que"></span><?php the_field('text1', 11) ?></div>
   	</div>
-  	<a data-aos="fade-up" href="<?php the_field('link', 11); ?>" style="width:max-content"><div class="more my-4">MÁS INFORMACIÓN</div></a>
+  	<a data-aos="fade-up" data-aos-anchor="#sobre-mi" href="<?php the_field('link', 11); ?>" style="width:max-content"><div class="more my-4">MÁS INFORMACIÓN</div></a>
     <div class="border-l-abs"></div>
   </div>
   	<div class="border-b-abs"></div>

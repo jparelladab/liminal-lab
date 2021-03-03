@@ -27,8 +27,10 @@
 	}
   .social {
     // border-right: 1px solid black;
-    @media(max-width: $screen-s){
-      // border-right: revert;
+    @media(max-width: $screen-m){
+      .border-r-abs {
+        display: none;
+      }
     }
   }
 }

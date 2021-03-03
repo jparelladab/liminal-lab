@@ -216,15 +216,20 @@ body {
     .page-intro .texts-2-3-4 .text-2 {
       border-bottom: 1px solid black; } }
   @media (max-width: 480px) {
-    .page-intro .texts-2-3-4 .text-2 {
-      border-right: revert; } }
+    .page-intro .texts-2-3-4 .text-2 .border-r-abs {
+      display: none; } }
   @media (max-width: 1000px) {
     .page-intro .texts-2-3-4 .text-3 {
       border-right: revert;
-      border-bottom: 1px solid black; } }
+      border-bottom: 1px solid black; }
+      .page-intro .texts-2-3-4 .text-3 .border-r-abs {
+        display: none; } }
   @media (max-width: 480px) {
-    .page-intro .texts-2-3-4 .text-4 {
-      border-right: revert; } }
+    .page-intro .texts-2-3-4 .text-3 .border-r-abs {
+      display: none; } }
+  @media (max-width: 480px) {
+    .page-intro .texts-2-3-4 .text-4 .border-r-abs {
+      display: none; } }
 
 .page-para-que {
   display: grid;
@@ -241,7 +246,9 @@ body {
     @media (max-width: 1000px) {
       .page-para-que .text1 {
         grid-column: 1;
-        border-right: revert; } }
+        border-right: revert; }
+        .page-para-que .text1 .border-r-abs {
+          display: none; } }
     .page-para-que .text1 p:nth-of-type(1) {
       display: inline; }
   @media (max-width: 1000px) {
@@ -250,14 +257,17 @@ body {
   .page-para-que .text2 {
     grid-column: 1; }
     @media (max-width: 1000px) {
-      .page-para-que .text2 {
-        border-right: revert; } }
+      .page-para-que .text2 .border-r-abs {
+        display: none; } }
     @media (max-width: 480px) {
       .page-para-que .text2 {
         display: none; } }
   .page-para-que .text2-mobile {
     display: none;
     grid-column: 1; }
+    @media (max-width: 480px) {
+      .page-para-que .text2-mobile .border-r-abs {
+        display: none; } }
     .page-para-que .text2-mobile p {
       margin-bottom: 0; }
     .page-para-que .text2-mobile .li-text2 {
@@ -324,7 +334,9 @@ body {
     @media (max-width: 1000px) {
       .page-sobre-mi .text1 {
         grid-column: 1;
-        border-left: revert; } }
+        border-left: revert; }
+        .page-sobre-mi .text1 .border-l-abs {
+          display: none; } }
     .page-sobre-mi .text1 p:nth-of-type(1) {
       display: inline; }
     .page-sobre-mi .text1 .more {
@@ -358,7 +370,9 @@ body {
       .page-servicios .text1 {
         grid-column: 1;
         border-right: revert;
-        border-bottom: 1px solid black; } }
+        border-bottom: 1px solid black; }
+        .page-servicios .text1 .border-r-abs {
+          display: none; } }
     .page-servicios .text1 p:nth-of-type(1) {
       display: inline; }
   .page-servicios .text_circle {
@@ -444,15 +458,15 @@ body {
           grid-row: 1;
           border-left: 1px solid black;
           border-right: revert;
-          border-bottom: 1px solid black; } }
+          border-bottom: 1px solid black; }
+          .page-servicios .slider .prev-arr .border-r-abs {
+            display: none; } }
       @media (max-width: 480px) {
         .page-servicios .slider .prev-arr {
           grid-column: 1;
           grid-row: 1;
           border-bottom: 1px solid black;
-          border-left: none !important; }
-          .page-servicios .slider .prev-arr .border-r-abs {
-            border-right: none !important; } }
+          border-left: none !important; } }
       .page-servicios .slider .prev-arr path {
         stroke-dashoffset: 1000;
         fill: none;
@@ -508,6 +522,9 @@ body {
       border-bottom: 1px solid black; } }
   .page-contacto .info p:nth-of-type(1) {
     display: inline; }
+  @media (max-width: 1000px) {
+    .page-contacto .social .border-r-abs {
+      display: none; } }
 
 header {
   position: fixed;

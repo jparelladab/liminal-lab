@@ -50,7 +50,10 @@
         border-bottom: 1px solid black;
       }
       @media(max-width: $screen-s){
-        border-right: revert;
+        // border-right: revert;
+        .border-r-abs {
+          display: none;
+        }
       }
     }
     .text-3 {
@@ -58,6 +61,15 @@
       @media(max-width: $screen-m){
         border-right: revert;
         border-bottom: 1px solid black;
+        .border-r-abs {
+          display: none;
+        }
+      }
+      @media(max-width: $screen-s){
+        // border-right: revert;
+        .border-r-abs {
+          display: none;
+        }
       }
     }
     .text-4 {
@@ -65,7 +77,10 @@
         // border-right: 1px solid black;
       }
       @media(max-width: $screen-s){
-        border-right: revert;
+        // border-right: revert;
+        .border-r-abs {
+          display: none;
+        }
       }
 
     }
