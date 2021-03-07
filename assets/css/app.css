@@ -289,10 +289,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: cener; }
+    .page-para-que .circles #svg-mobile {
+      display: none; }
     @media (max-width: 1000px) {
       .page-para-que .circles {
         grid-column: 1;
         grid-row: revert; } }
+    @media (max-width: 480px) {
+      .page-para-que .circles #svg-mobile {
+        display: block; }
+      .page-para-que .circles #svg-desktop {
+        display: none; } }
     .page-para-que .circles .circle1 {
       grid-column: 1;
       grid-row: 1; }
@@ -351,6 +358,35 @@ body {
     .page-sobre-mi .text1 .more:hover {
       background-color: black;
       color: white; }
+  .page-sobre-mi .three-columns {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 33% 33% 33%; }
+    @media (max-width: 1000px) {
+      .page-sobre-mi .three-columns {
+        grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) {
+      .page-sobre-mi .three-columns {
+        grid-template-columns: 1fr; } }
+    .page-sobre-mi .three-columns .text2 {
+      grid-column: 2; }
+      @media (max-width: 1000px) {
+        .page-sobre-mi .three-columns .text2 {
+          grid-column: 1; }
+          .page-sobre-mi .three-columns .text2 .border-l-abs {
+            display: none; } }
+    .page-sobre-mi .three-columns .text3 {
+      grid-column: 3; }
+      @media (max-width: 1000px) {
+        .page-sobre-mi .three-columns .text3 {
+          grid-column: 2; } }
+      @media (max-width: 480px) {
+        .page-sobre-mi .three-columns .text3 {
+          grid-column: 1; }
+          .page-sobre-mi .three-columns .text3 .border-l-abs {
+            display: none; } }
+      .page-sobre-mi .three-columns .text3 ul {
+        padding-left: 20px !important; }
 
 .page-servicios {
   display: grid;
@@ -512,7 +548,7 @@ body {
 
 .page-contacto {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+  grid-template-columns: 33% 33% 33%; }
   @media (max-width: 1000px) {
     .page-contacto {
       grid-template-columns: 1fr 1fr; } }
@@ -529,6 +565,11 @@ body {
   @media (max-width: 1000px) {
     .page-contacto .social .border-r-abs {
       display: none; } }
+  .page-contacto .empty {
+    grid-column: 3; }
+    @media (max-width: 1000px) {
+      .page-contacto .empty {
+        display: none; } }
 
 header {
   position: fixed;
@@ -593,9 +634,8 @@ header {
   #nav-mobile #menu-main-menu-1 {
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
-    background-color: white;
-    padding-bottom: 20px; }
+    padding: 15px;
+    background-color: white; }
     #nav-mobile #menu-main-menu-1 li {
       margin: 10px 0; }
 

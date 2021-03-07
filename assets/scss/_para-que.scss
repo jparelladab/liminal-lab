@@ -92,12 +92,21 @@
     align-items: cener;
     // grid-template-columns: 1fr 1fr 1fr;
     // grid-template-rows: 200px 200px 200px;
+    #svg-mobile {
+      display: none;
+    }
     @media(max-width: $screen-m){
       grid-column: 1;
       grid-row: revert;
     }
     @media(max-width: $screen-s){
       // grid-template-rows: 150px 150px 150px;
+      #svg-mobile {
+        display: block;
+      }
+      #svg-desktop {
+        display: none;
+      }
     }
 
 

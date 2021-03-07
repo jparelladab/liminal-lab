@@ -152,6 +152,8 @@ body {
 .border-t-abs {
   position: absolute;
   top:0;
+  // left:0;
+  // right:0;
   width:0;
   border-bottom: 1px solid #000000;
   transition: width 1s;
