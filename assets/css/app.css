@@ -370,11 +370,18 @@ body {
         grid-template-columns: 1fr; } }
     .page-sobre-mi .three-columns .text2 {
       grid-column: 2; }
+      .page-sobre-mi .three-columns .text2 .border-b-abs {
+        display: none; }
       @media (max-width: 1000px) {
         .page-sobre-mi .three-columns .text2 {
           grid-column: 1; }
           .page-sobre-mi .three-columns .text2 .border-l-abs {
             display: none; } }
+      @media (max-width: 480px) {
+        .page-sobre-mi .three-columns .text2 .border-b-abs {
+          display: block;
+          left: 0;
+          right: 0; } }
     .page-sobre-mi .three-columns .text3 {
       grid-column: 3; }
       @media (max-width: 1000px) {
@@ -564,6 +571,9 @@ body {
     display: inline; }
   @media (max-width: 1000px) {
     .page-contacto .social .border-r-abs {
+      display: none; } }
+  @media (max-width: 480px) {
+    .page-contacto .social .border-l-abs {
       display: none; } }
   .page-contacto .empty {
     grid-column: 3; }

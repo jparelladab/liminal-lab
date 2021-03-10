@@ -26,8 +26,6 @@
         display: none;
       }
     }
-    @media(max-width: $screen-s){
-    }
 
     p:nth-of-type(1){
       display: inline;
@@ -60,13 +58,25 @@
 
     .text2 {
       grid-column: 2;
+      .border-b-abs {
+        display: none;
+      }
       @media(max-width: $screen-m){
         grid-column: 1;
         .border-l-abs {
           display: none;
         }
       }
+
+      @media(max-width: $screen-s){
+        .border-b-abs {
+          display: block;
+          left:0;
+          right:0;
+        }
+      }
     }
+
     .text3 {
       grid-column: 3;
       @media(max-width: $screen-m){
